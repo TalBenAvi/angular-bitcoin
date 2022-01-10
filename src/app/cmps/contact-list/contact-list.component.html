@@ -1,0 +1,4 @@
+<section class="contact-list-container">
+  <loading *ngIf="!contacts"></loading>
+  <contact-preview (remove)="removeContact.emit($event)" *ngFor="let contact of contacts"[contact]="contact"></contact-preview>
+</section>

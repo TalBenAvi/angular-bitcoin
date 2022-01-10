@@ -1,0 +1,12 @@
+.chart-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  & * {
+    width: 300px;
+  }
+}

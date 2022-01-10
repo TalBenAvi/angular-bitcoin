@@ -1,0 +1,13 @@
+<section class="home-page" *ngIf="user">
+  <i (click)="logOut()" class="material-icons log-out">logout</i>
+  <h2> <b> Hello {{user.name}} </b> </h2>
+  <div class="img-preview" [ngStyle]="{ 'background-image': 'url('+user.img+')' }"></div>
+  <p>${{user.coins}}</p>
+  <p class="p-container">
+    <img class="bitcoin-img" src="src/assets/bitcoin.png" alt="">
+    {{bitcoin}}
+  </p>
+
+  <moves-list [moves]="moves" [title]='title'></moves-list>
+
+</section>
